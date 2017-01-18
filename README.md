@@ -4,7 +4,7 @@ This repository contains the starter pack for the neural networks practical of t
 
 The purpose of this practical exercise is leveraging the [Keras](http://keras.io) framework to build, prototype and deploy deep neural networks on the [notMNIST](http://yaroslavvb.blogspot.co.uk/2011/09/notmnist-dataset.html) dataset (classifying 28x28 grayscale glyphs into ten classes (A-J)) in order to maximise accuracy.
 
-The setup has been adapted from my collaboration with [Nenad Bauk](https://github.com/fifiman) for the [mgcsweek](http://www.csnedelja.mg.edu.rs) seminar at the [High School of Mathematics](http://www.mg.edu.rs) in Belgrade
+The setup has been adapted from my collaboration with [Nenad Bauk](https://github.com/fifiman) for the [mgcsweek](http://www.csnedelja.mg.edu.rs) seminar at the [High School of Mathematics](http://www.mg.edu.rs) in Belgrade.
 
 ## Dependencies
 
