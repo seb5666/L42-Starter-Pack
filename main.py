@@ -20,4 +20,4 @@ model.fit(X_train, y_train, batch_size=batch_size, nb_epoch=nb_epoch,
 
 score = model.evaluate(X_test, y_test, verbose=1)
 
-print "Accuracy:", score[1]
+print("Accuracy:", score[1])

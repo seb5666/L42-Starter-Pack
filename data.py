@@ -20,7 +20,7 @@ def load_data():
     X = np.rollaxis(X, 2)
 
     # Reshape and format input
-    X = X.reshape(X.shape[0], 1, rows, cols)
+    X = X.reshape(X.shape[0], rows, cols, 1)
     X = X.astype('float32')
     X /= 255.0
 

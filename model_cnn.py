@@ -2,15 +2,11 @@ from keras.models import Sequential
 from keras.layers import Activation, Dense, Dropout, Flatten
 from keras.layers import Convolution2D, MaxPooling2D
 
-from keras import backend as K
-K.set_image_dim_ordering('th')
-
-
 def get_model():
 
     # Model parameters
     rows, cols = 28, 28
-    input_shape = (1, rows, cols)
+    input_shape = (rows, cols, 1)
 
     nb_filters = 32
     nb_classes = 10
@@ -38,7 +34,7 @@ def get_model():
     model.add(Dense(nb_classes))
     model.add(Activation('softmax'))
 
-    print model.summary()
+    print(model.summary())
 
     return model
 
