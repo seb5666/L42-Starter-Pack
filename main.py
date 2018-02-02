@@ -10,7 +10,7 @@ from cnn_model import get_cnn_model
 from keras.preprocessing.image import ImageDataGenerator
 
 batch_size = 128
-nb_epoch = 30
+nb_epoch = 45
 
 # Load data
 (X_train, y_train, X_test, y_test) = load_data()
@@ -23,7 +23,7 @@ model.compile(loss='categorical_crossentropy', optimizer=Adam(),
 
 #model.fit(X_train, y_train, batch_size=batch_size, epochs=nb_epoch, verbose=1, validation_data=(X_test, y_test))
 
-datagen = ImageDataGenerator(width_shift_range=0.1, height_shift_range=0.1)
+datagen = ImageDataGenerator(width_shift_range=0.1, height_shift_range=0.1, zoom_range=0.1)
 
 datagen.fit(X_train)
 model.fit_generator(datagen.flow(X_train, y_train, batch_size=batch_size), epochs=nb_epoch, verbose=1, validation_data=(X_test, y_test))
